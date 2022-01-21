@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Pacifico&family=Vollkorn&display=swap');
 :root {
     --main-color: #273c75;
     --menu-clolor: #ff7675;
@@ -480,4 +481,124 @@ a {
     color: #fff;
     margin-top: 20px;
     border-top: 2px solid var(--bg-color);
+}
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/1.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub-header h1{
+    font-size: 40px;
+    color:#fff;
+    font-family: 'Vollkorn', serif;
+}
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width:100%;
+}
+.contact-us{
+    width:80%;
+    margin: auto;
+}
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.contact-col div .fa{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+.contact-col div p{
+    font-family: 'Vollkorn', serif;
+    padding: 0;
+}
+.contact-col div h5{
+    font-family: 'Vollkorn', serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.hero-btm {
+    display: inline-block;
+    text-decoration: none;
+    color: #308ecc;
+    border: 3px solid #b62db6;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    border-radius: 50px;
+    font-family: 'Vollkorn', serif;
+}
+.hero-btm:hover{
+    border: 3px solid #b62db6;
+    background: #e78cd8;
+    transition: 1s;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+nav {
+    display:flex;
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+    border-radius: 50%;
+
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display:  inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Vollkorn', serif;
+}
+.nav-links ul li::after{
+    content:"";
+    width:0%;
+    height:2px;
+    background: #1B9CFC;
+    display: block;
+    margin:auto;
+    transition: all 0.5s ease-out;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
 }
